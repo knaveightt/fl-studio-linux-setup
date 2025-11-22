@@ -14,6 +14,7 @@ In Bottles, wine distributions are called Runners. There are quite a few to choo
 
 ## Notes / Updates: 
 - (Jul, 2025) kron4ek-wine-10.12-staging causes FL Studio Mobile and Rack to create duplicate windows. This may affect other plugins as well. See [this issue](https://github.com/Torbuntu/fl-studio-linux-setup/issues/2). Rolling down to kron4ek-wine-10.11-staging resolves the duplicate/ghost window for me.
+- (Nov, 2025) For WebView2 compatibility try using runner ge-proton10-25 and Bottles 60. It might work out of the box now functionally but with a few graphical flickers.  
 
 ## DLL Components
 I use DXVK and VKD3D in my bottles.
@@ -85,6 +86,7 @@ It will be very beneficial to install [Flatseal](https://flathub.org/apps/com.gi
 Some things I did with Flatseal:
 - Adding Filesystem entry `xdg-music` to be able to work more easily with content between different bottled versions of FL Studio.
 - Adding Filesystem entry `xdg-data/applications` so that I can "Add Desktop Entry" for FL Studio in GNOME.
+- Updating the `.desktop` entry to include `MimeType=x-scheme-handler/flstudio` will allow authenticating from a browser (that supports xdg-open). I have not been able to do this with Firefox in Flatpak, but Chromium in flatpak works.
 
 ## Other
 I hope this guide is helpful and can be expanded to assist folks in running FL Studio in linux based operating systems.
@@ -96,5 +98,3 @@ If you have any corrections, tips, tricks, or expanded information for running F
 #### WebView2 information
 - https://github.com/MicrosoftEdge/WebView2Feedback/issues/3127
 - https://appdb.winehq.org/objectManager.php?sClass=application&iId=20379
-
-
