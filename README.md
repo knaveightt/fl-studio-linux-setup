@@ -12,6 +12,7 @@ Flatseal: https://flathub.org/apps/com.github.tchx84.Flatseal
 Kron4ek wine releases: https://github.com/Kron4ek/Wine-Builds/releases 
 
 ## Notes / Updates:
+- (Jan, 2026) WARNING : FL Cloud Plugins appears to have a memory leak.
 - (Jan, 2026) kron4ek-wine-11.0-amd64 now fixes both the duplicated plugin windows (mobile, mobile rack, etc) and also now has functioning WebView2 rendering so Sounds, Help manual and Gopher are all working within FL Studio.
 
 
