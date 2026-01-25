@@ -9,13 +9,15 @@ Bottles on Flathub: https://flathub.org/apps/com.usebottles.bottles
 
 Flatseal: https://flathub.org/apps/com.github.tchx84.Flatseal
 
+Kron4ek wine releases: https://github.com/Kron4ek/Wine-Builds/releases 
+
 ## Notes / Updates:
-- (Jul, 2025) kron4ek-wine-10.12-staging causes FL Studio Mobile and Rack to create duplicate windows. This may affect other plugins as well. See [this issue](https://github.com/Torbuntu/fl-studio-linux-setup/issues/2). Rolling down to kron4ek-wine-10.11-staging resolves the duplicate/ghost window for me.
-- (Nov, 2025) For WebView2 compatibility try using runner ge-proton10-25 and Bottles 60. It might work out of the box now functionally but with a few graphical flickers.
+- (Jan, 2026) kron4ek-wine-11.0-amd64 now fixes both the duplicated plugin windows (mobile, mobile rack, etc) and also now has functioning WebView2 rendering so Sounds, Help manual and Gopher are all working within FL Studio.
 
 
 ## Installing Runners
-In Bottles, wine distributions are called Runners. There are quite a few to choose from. Many users have had the best success with `ge-proton` under `Proton GE` in the Runners menu. You may need/want to enable Pre-Release versions under General -> Advanced in order to get newer/other versions of wine runners.
+In Bottles, wine distributions are called Runners. There are quite a few to choose from. Many users have had the best success with `kron4ek-wine-11.0-amd64` or `ge-proton` (under `Proton GE`) in the Runners menu. You may need/want to enable Pre-Release versions under General -> Advanced in order to get newer/other versions of wine runners.
+
 <img width="349" height="296" alt="Preferences" src="https://github.com/user-attachments/assets/5e06d028-29e4-45e5-afe2-ebadd2586520" />
 
 <img width="862" height="626" alt="RunnersMenu" src="https://github.com/user-attachments/assets/6d9b96e9-71bd-443a-9320-1e255827e669" />
@@ -24,7 +26,8 @@ In Bottles, wine distributions are called Runners. There are quite a few to choo
 I use DXVK and VKD3D in my bottles. They can be found in the `DLL Components` menu tab to the right of `Runners` and `Cache`
 
 ## First Bottle
-After getting familiar with the Bottles program, create a new bottle. Choose a name for the bottle and select a runner (ideally one we installed in the previous step `Installing Runners`. The following screenshot shows the drop down for Runners with `ge-proton10-25` selected.
+After getting familiar with the Bottles program, create a new bottle. Choose a name for the bottle and select a runner (ideally one we installed in the previous step `Installing Runners`. The following screenshot shows the drop down for Runners with `ge-proton10-25` selected. (Jan 2026) `kron4ek-wine-11.0-amd64` is now what I am using personally again.
+
 <img width="584" height="720" alt="Screenshot From 2025-12-04 17-18-46" src="https://github.com/user-attachments/assets/b6537b71-8de6-455d-98fd-9001556b6764" />
 
 
@@ -68,14 +71,17 @@ After the installer completes (you may need to go back to the main Bottles menu 
 The first time you open up FL Studio it will be in Trial mode. It may take a moment to load the first introduction project. 
 
 For me, there are some goofy "FAIL" messages regarding midi input.
+
 ![image](https://github.com/user-attachments/assets/079cec4c-9be3-4bee-b15b-8bd02a3531db)
 
 I just disable these.
 
 If everything seems good enough, we can register! I login with credentials. On GNOME we can set up a desktop file so the web redirect works for login, but this is easier.
+
 ![image](https://github.com/user-attachments/assets/d4bea109-57d1-46ca-943a-1c543d933b3c)
 
 Your computer may warn you that bottles is not responding when you enter the validation code on GNOME. I press wait and it does succeed for me. The usual popup to restart after validation will show up and I restart without saving.
+
 ![image](https://github.com/user-attachments/assets/10e3f29a-d00e-4787-a3f7-587980b14685)
 
 
