@@ -17,7 +17,7 @@ Kron4ek wine releases: https://github.com/Kron4ek/Wine-Builds/releases
 
 
 ## Installing Runners
-In Bottles, wine distributions are called Runners. There are quite a few to choose from. Many users have had the best success with `kron4ek-wine-11.0-amd64` or `ge-proton` (under `Proton GE`) in the Runners menu. You may need/want to enable Pre-Release versions under General -> Advanced in order to get newer/other versions of wine runners.
+In Bottles, wine distributions are called Runners. There are quite a few to choose from. Many users have had the best success with `Kron4ek` or `Proton GE` in the Runners menu. You may need/want to enable Pre-Release versions under General -> Advanced in order to get newer/other versions of wine runners.
 
 <img width="349" height="296" alt="Preferences" src="https://github.com/user-attachments/assets/5e06d028-29e4-45e5-afe2-ebadd2586520" />
 
